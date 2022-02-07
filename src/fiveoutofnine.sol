@@ -80,7 +80,7 @@ contract fiveoutofnine is ERC721, Ownable, ReentrancyGuard {
         return fiveoutofnineART.getMetadata(tokenInternalIds[_tokenId], tokenMoves[_tokenId]);
     }
 
-    function setBaseURI(string memory _baseURI) external onlyOwner {
+    function setBaseURI(string calldata _baseURI) external onlyOwner {
         baseURI = _baseURI;
     }
 
