@@ -7,7 +7,8 @@ and stored 100% on-chain as well (see [`fiveoutofnineART.sol`](https://github.co
 
 ![](sample-art.png)
 
-A live version has been [deployed on mainnet](https://etherscan.io/address/0xb543f9043b387ce5b3d1f0d916e42d8ea2eba2e0#code).
+fiveoutofnine at commit [`d89e62c`](https://github.com/fiveoutofnine/fiveoutofnine-chess/commit/d89e62c1072db9d06d9579c4732d416cd9a4688b)
+is live on mainnet ([`0xb543f9043b387ce5b3d1f0d916e42d8ea2eba2e0`](https://etherscan.io/address/0xb543f9043b387ce5b3d1f0d916e42d8ea2eba2e0#code))
 
 ## Installation
 To install with [Foundry](https://github.com/gakonst/foundry):
