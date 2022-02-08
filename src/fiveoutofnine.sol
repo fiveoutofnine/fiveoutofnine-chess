@@ -35,7 +35,7 @@ contract fiveoutofnine is ERC721, Ownable, ReentrancyGuard {
         board = 0x500000000000000000000e000000000003000000000000000000001;
     }
 
-    function mintMove(uint256 _move, uint256 _depth) external payable nonReentrant {
+    function mintMove(uint256 _move, uint256 _depth) external nonReentrant {
         require(_depth >= 3 && _depth <= 10);
         require((internalId >> 0x80) < 59 && uint128(internalId) < 59);
 
