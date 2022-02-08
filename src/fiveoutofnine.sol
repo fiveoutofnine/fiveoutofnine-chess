@@ -3,7 +3,6 @@ pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 import { Chess } from "./Chess.sol";
@@ -35,7 +34,7 @@ contract fiveoutofnine is ERC721, Ownable, ReentrancyGuard {
         board = 0x500000000000000000000e000000000003000000000000000000001;
     }
 
-    function mintMove(uint256 _move, uint256 _depth) external payable nonReentrant {
+    function mintMove(uint256 _move, uint256 _depth) external payable {
         require(_depth >= 3 && _depth <= 10);
         require((internalId >> 0x80) < 59 && uint128(internalId) < 59);
 
