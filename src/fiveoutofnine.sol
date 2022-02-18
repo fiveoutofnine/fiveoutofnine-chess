@@ -13,7 +13,7 @@ import { fiveoutofnineART } from "./fiveoutofnineART.sol";
 /// @author fiveoutofnine
 /// @notice This file has few docstrings (by choice) because most of it is standard. Refer to
 /// {Chess}, {Engine}, and {fiveoutofnineART} for thorough documentation.
-contract fiveoutofnine is ERC721, Ownable, ReentrancyGuard {
+contract fiveoutofnine is ERC721, Ownable {
     using Chess for uint256;
     using Strings for uint256;
 
